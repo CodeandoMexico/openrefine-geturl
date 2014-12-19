@@ -36,10 +36,7 @@ RUN wget https://github.com/OpenRefine/OpenRefine/releases/download/2.5/google-r
     rm openrefine.tar.gz
 
 # Install geturl extension
-
-RUN wget https://github.com/CodeandoMexico/openrefine-geturl/archive/master.zip -O geturl.zip && \
-    unzip geturl.zip -d /open-refine/webapp/extensions/ && \
-    rm geturl.zip
+ADD . /open-refine/webapp/extensions/geturl
 
 # Init open refine
 WORKDIR /open-refine
