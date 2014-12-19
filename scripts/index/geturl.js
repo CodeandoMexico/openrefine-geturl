@@ -19,7 +19,12 @@ function getResource() {
     var query = get_query_as_json(plain_query);
     if (query["resource"] && validUrl(query["resource"])) {
       return  query["resource"];
+    } 
+
+    if (query["resource"] && validUrl(decodeURIComponent(query["resource"])) {
+      return decodeURIComponent(query["resource"]);
     }
+    
 
    return null;
 }

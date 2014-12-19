@@ -7,7 +7,7 @@ An extension that gets an url at querystring  and creates a project
 Clone this repo in your extensions open refine dir:
 
 ```console
-$ git clone https://github.com/CodeandoMexico/openrefine-geturl -d webapp/extensions/geturl
+$ git clone https://github.com/CodeandoMexico/openrefine-geturl.git -d webapp/extensions/geturl
 ```
 
 ## License
